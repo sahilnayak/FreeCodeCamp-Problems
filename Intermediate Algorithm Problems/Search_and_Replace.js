@@ -22,7 +22,6 @@ console.log(str)
 
 // Test Cases
 myReplace("A quick brown fox jumped over the lazy dog", "jumped", "leaped");
-
 myReplace("Let us go to the store", "store", "mall") //should return "Let us go to the mall".
 myReplace("He is Sleeping on the couch", "Sleeping", "sitting") //should return "He is Sitting on the couch".
 myReplace("This has a spellngi error", "spellngi", "spelling") //should return "This has a spelling error".
