@@ -3,16 +3,24 @@
 
 function translatePigLatin(str) {
 
-var regex = /[aeiou]/;
-  
-  if(str[0].match(regex)) {
-  	  str = str + 'way';
+  if(str[0] === ("a" || "e" || "i" || "o" || "u")) {
+  	str = str + 'way';
   }
 
   else{
-  	var index = str.indexOf(str.match(regex));
-  	str = str.substring(index,str.length) + str.substring(0,index) + 'ay';
+
+  	str = str.split("");
+
+  	str.forEach(function(i){
+
+
+  	});
+  	
+  	console.log(str)
   }
+
+
+
 
   return str;
 }
@@ -21,12 +29,12 @@ var regex = /[aeiou]/;
 
 
 
-//Note to self, there is a way to solve this problem recursively, !EXTRA CREDIT!
+
 
 
 //Test Cases
 translatePigLatin("california") //should return "aliforniacay".
-translatePigLatin("paragraphs") //should return "aragraphspay".
-translatePigLatin("glove") //should return "oveglay".
+//translatePigLatin("paragraphs") //should return "aragraphspay".
+//translatePigLatin("glove") //should return "oveglay".
 translatePigLatin("algorithm") //should return "algorithmway".
-translatePigLatin("eight") //should return "eightway".
+//translatePigLatin("eight") //should return "eightway".
