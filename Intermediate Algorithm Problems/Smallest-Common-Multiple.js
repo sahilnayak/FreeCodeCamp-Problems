@@ -2,7 +2,13 @@
 as well as by all sequential numbers in the range between these parameters.*/
 
 function smallestCommons(arr) {
+	var holder = []
 	arr = arr.sort(function(a,b){ return a-b})
+
+	for(var i = arr[0]; i<=arr[1]; i++){
+		
+		
+	}
  
 
 
